@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Linux-文件操作"
+date: 2021-07-27 19:22:30
+---
 ### 复制命令
 cp dir1/a.doc dir2 表示将dir1下的a.doc文件复制到dir2目录下
 

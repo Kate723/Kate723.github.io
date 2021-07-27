@@ -1,3 +1,9 @@
+---
+layout: post
+title: "info"
+date: 2021-07-27 19:22:30
+---
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Kate723/Kate723.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
