@@ -14,7 +14,7 @@
     
     
       
-        <title>Linux学习 - 纪安的笔记本</title>
+        <title>信息检索 - 纪安的笔记本</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linux" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Linux学习
+              信息检索
             
           </span>
         </div>
@@ -188,21 +188,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../linux/" class="md-nav__link">
         Linux学习
       </a>
-      
     </li>
   
 
@@ -226,6 +216,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#larbin" class="md-nav__link">
+    Larbin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lucene" class="md-nav__link">
+    Lucene
+  </a>
+  
+    <nav class="md-nav" aria-label="Lucene">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jsoup" class="md-nav__link">
+    Jsoup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -237,7 +262,26 @@
               
                 
                 
-                <h1 id="linux">纪安的linux学习笔记<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h1>
+                <h1 id="_1">信息检索<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>课程项目：搭建一个针对纯美苹果园的搜索引擎。</p>
+<p>纯美苹果园网页分析：</p>
+<p>列表网页<code>45.79.87.129/bbs/index.php?board=XXXX</code>主要内容：</p>
+<div class="codehilite"><pre><span></span><code>div#content_section -&gt; div.frame -&gt; div#main_content_section -&gt; form#quickModForm.clear
+</code></pre></div>
+
+<p>帖子网页<code>45.79.87.129/bbs/index.php?topic=XXXX</code>主要内容：</p>
+<div class="codehilite"><pre><span></span><code>div#content_section -&gt; div.frame -&gt; div#main_content_section -&gt; div#forumposts -&gt; form#quickModForm
+</code></pre></div>
+
+<h2 id="larbin">Larbin<a class="headerlink" href="#larbin" title="Permanent link">&para;</a></h2>
+<p>开源的爬虫架构，下载之后通过简单的编译和配置就能够使用。由于larbin的原作者早已不再更新和维护，旧版本有很多不再适用的地方，易用性也较差，因此使用的是Github上经过其他开发者更新的新版本：<a href="https://github.com/ictxiangxin/larbin">https://github.com/ictxiangxin/larbin</a></p>
+<p>larbin爬取后的文件在larbin/build/save下，每一个d开头的文件夹下存储多个f开头的文件，url统一存储在index文件中。</p>
+<h2 id="lucene">Lucene<a class="headerlink" href="#lucene" title="Permanent link">&para;</a></h2>
+<p>优秀的开源搜索框架</p>
+<p>官方文档：<a href="https://lucene.apache.org/core/8_8_2/core/index.html">https://lucene.apache.org/core/8_8_2/core/index.html</a></p>
+<h3 id="jsoup">Jsoup<a class="headerlink" href="#jsoup" title="Permanent link">&para;</a></h3>
+<p>用于解析HTML，去除标签，提取所需内容等。</p>
+<p>教程网站：<a href="https://www.yiibai.com/jsoup/jsoup-quick-start.html">https://www.yiibai.com/jsoup/jsoup-quick-start.html</a></p>
                 
               
               
@@ -253,26 +297,6 @@
       
         
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="上一页: 主页" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                上一页
-              </span>
-              主页
-            </div>
-          </div>
-        </a>
-      
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
