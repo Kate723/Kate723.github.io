@@ -2,16 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>None</loc>
-<<<<<<< HEAD
-         <lastmod>2021-09-24</lastmod>
-=======
-         <lastmod>2021-08-03</lastmod>
->>>>>>> parent of 654dbf1 (ir学习内容)
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>None</loc>
-<<<<<<< HEAD
          <lastmod>2021-09-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -28,9 +18,11 @@
     <url>
          <loc>None</loc>
          <lastmod>2021-09-24</lastmod>
-=======
-         <lastmod>2021-08-03</lastmod>
->>>>>>> parent of 654dbf1 (ir学习内容)
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>None</loc>
+         <lastmod>2021-09-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
