@@ -385,11 +385,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    知识蒸馏
+  <a href="#knowledge-distillation" class="md-nav__link">
+    知识蒸馏（knowledge distillation）
   </a>
   
-    <nav class="md-nav" aria-label="知识蒸馏">
+    <nav class="md-nav" aria-label="知识蒸馏（knowledge distillation）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -400,8 +400,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     集成蒸馏方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cronus" class="md-nav__link">
+    Cronus方法
   </a>
   
 </li>
@@ -409,6 +416,20 @@
           <li class="md-nav__item">
   <a href="#def-kt" class="md-nav__link">
     Def-KT方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fada" class="md-nav__link">
+    FADA方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fedmd" class="md-nav__link">
+    FedMD方法
   </a>
   
 </li>
@@ -441,14 +462,21 @@
 fine-tuning）会有收敛困难（difficulties in converging）问题。</p>
 <h3 id="cfl">CFL方法<a class="headerlink" href="#cfl" title="Permanent link">&para;</a></h3>
 <p>为了处理non-IID数据，[111]中提出了CFL框架，它是一个非凸优化框架，在以余弦相似度分布的数据（client population distributions based on the cosine similarity）上有较好的表现，但表现出的对数据相似度的依赖或许会威胁到数据安全。</p>
-<h2 id="_3">知识蒸馏<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="knowledge-distillation">知识蒸馏（knowledge distillation）<a class="headerlink" href="#knowledge-distillation" title="Permanent link">&para;</a></h2>
 <p>[9，50，41]对知识蒸馏做了简单的介绍。知识蒸馏主要分为两种方式，联邦迁移学习（federated transfer learning）和领域自适应（domain adaption）。</p>
 <h3 id="ftl">FTL方法<a class="headerlink" href="#ftl" title="Permanent link">&para;</a></h3>
 <p>[132]中利用FTL训练了一个词语预测模型，[89]中提出了解决文件的安全问题。FTL可以将不同域的数据进行迁移，从而解决数据重合度过低的问题。同时利用同态加密[36]和密钥分享[14]保证数据安全</p>
-<h3 id="_4">集成蒸馏方法<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h3 id="_3">集成蒸馏方法<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>[86]中提出了更进一步的知识蒸馏方法，集成蒸馏，它优化了多端模型进行聚合的问题，提供了更高的宽容度和灵活性，允许大小，精度甚至结构不同的模型进行整合。</p>
+<h3 id="cronus">Cronus方法<a class="headerlink" href="#cronus" title="Permanent link">&para;</a></h3>
+<p>[13]专注于提出防止参与方有预谋的使模型恶化与防止被攻击安全的问题，它通过将本地模型视为黑盒并减少通信降低信息泄露的风险。</p>
 <h3 id="def-kt">Def-KT方法<a class="headerlink" href="#def-kt" title="Permanent link">&para;</a></h3>
-<p>Def-KT（decentralized federated learning via mutual knowledge transfer）方法，为了解决在聚合模型时</p>
+<p>Def-KT（decentralized federated learning via mutual knowledge transfer）方法[75]，为了解决在聚合模型时平均模型参数导致的本地模型表现下降，尤其是针对non-IID数据时，为此提出了通过相互转移知识来融合模型的方法。即在[163]中提出的令教师模型和学生模型互相学习。</p>
+<p><strong>接下来是领域自适应部分</strong></p>
+<h3 id="fada">FADA方法<a class="headerlink" href="#fada" title="Permanent link">&para;</a></h3>
+<p>FADA（federated adversarial domain adaptation） [105]，令节点上的数据领域分布与目标的领域分布自动对齐，从而解决领域分布带来的精度低问题。</p>
+<h3 id="fedmd">FedMD方法<a class="headerlink" href="#fedmd" title="Permanent link">&para;</a></h3>
+<p>FedMD（federated learning via model distillation）[76]依旧是针对个性化问题的解决方案，他为每个参与者提供了不同设计的模型并共同训练。核心是从节点共享的公共数据库传输知识。例如利用公共数据库训练模型之后利用本地数据继续训练。</p>
                 
               
               
