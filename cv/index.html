@@ -14,7 +14,7 @@
     
     
       
-        <title>Docker学习 - 纪安的笔记本</title>
+        <title>模式识别 - 纪安的笔记本</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker学习
+              模式识别
             
           </span>
         </div>
@@ -193,12 +193,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -233,11 +235,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../cv/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         模式识别
       </a>
+      
     </li>
   
 
@@ -269,14 +281,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -311,21 +321,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../docker/" class="md-nav__link">
         Docker学习
       </a>
-      
     </li>
   
 
@@ -367,22 +367,8 @@
               
                 
                 
-                <h1 id="docker">Docker学习笔记<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h1>
-<p>启动docker容器</p>
-<div class="codehilite"><pre><span></span><code>sudo docker run -it suhuiw4123/mirai-dice
-</code></pre></div>
-
-<p>配置容器自动启动</p>
-<div class="codehilite"><pre><span></span><code>sudo docker update --restart=always 容器Id
-</code></pre></div>
-
-<p>复制docker内容到宿主机</p>
-<div class="codehilite"><pre><span></span><code>sudo docker cp e7be90131451:home/container/dice/Dice947516660 ~/dice/
-</code></pre></div>
-
-<p>挂载配置文件到docker</p>
-<div class="codehilite"><pre><span></span><code>sudo docker run -it -v /home/user/dice/Dice947516660:/home/container/dice/Dice947516660 -v /home/user/dice/Console:/home/container/dice/config/Console suhuiw4123/mirai-dice
-</code></pre></div>
+                <h1 id="_1">手写字符识别<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>计划开发基于深度学习和计算机视觉的手写字符识别系统，识别范围为26个英文字母及10个阿拉伯数字。采用python语言，opencv与tensorflow技术分别实现字符的分割与识别，Tkinter实现简单的gui界面。</p>
                 
               
               
@@ -402,7 +388,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../linux/" class="md-footer__link md-footer__link--prev" aria-label="上一页: linux学习" rel="prev">
+        <a href="../fl/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 隐私保护" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -411,11 +397,26 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              linux学习
+              隐私保护
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../ir/" class="md-footer__link md-footer__link--next" aria-label="下一页: 信息检索" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              信息检索
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
